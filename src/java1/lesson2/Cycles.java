@@ -95,7 +95,7 @@ public class Cycles {
         //int n = new Scanner(System.in).nextInt();
         //int [] ar = new int[n];
         //System.out.println(ar.length);
-        int peek = -1, index = -1;
+        int peek = 0, index = 0;
         int timeDifficult = 0;
         for (int i = 0; i < mou.length; i++) {
             timeDifficult++;
@@ -106,7 +106,7 @@ public class Cycles {
         }
         System.out.println();
         System.out.println("Processed by " + timeDifficult + " iteration");
-        System.out.println("Peek height - " + peek + " at index = " + index);
+        System.out.println("Peek height = " + peek + " at index = " + index);
         //impl2 O(logN)
         int l = 0, r = mou.length - 1;
         timeDifficult = 0;
@@ -146,6 +146,6 @@ public class Cycles {
     }
 
     public static void main(String[] args) {
-        deepArrays();
+        arrays();
     }
 }
