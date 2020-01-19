@@ -95,7 +95,7 @@ public class Cycles {
         //int n = new Scanner(System.in).nextInt();
         //int [] ar = new int[n];
         //System.out.println(ar.length);
-        int peek = 0, index = 0;
+        int peek = -1, index = -1;
         int timeDifficult = 0;
         for (int i = 0; i < mou.length; i++) {
             timeDifficult++;
