@@ -41,6 +41,24 @@ public class HomeWork {
         }
 
 
+    /*Создать квадратный двумерный целочисленный массив (количество строк и столбцов одинаковое),
+    и с помощью цикла(-ов) заполнить его диагональные элементы единицами;*/
+
+    static void twoDimensionalArray () {
+
+        int [] [] table = new int [3] [3] ;
+
+        for (int i = 0; i<table.length; i++) {
+            for (int j = 0 ; j<table.length; j++) {
+                if ((i==j) || (i == table.length - j - 1)) table[i][j] = 1;
+                    else {
+                        table[i][j] = 0;
+                    }
+                System.out.print(table[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
 
 
 
@@ -48,11 +66,20 @@ public class HomeWork {
     public static void main(String[] args) {
         System.out.println("Task 1");
         invertArray();
+
         System.out.println();
+
         System.out.println("Task 2");
         fillArray() ;
+
         System.out.println();
+
         System.out.println("Task 3");
         x2MaxArray ();
+
+        System.out.println();
+
+        System.out.println("Task 4");
+        twoDimensionalArray ();
     }
 }
