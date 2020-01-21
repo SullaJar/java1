@@ -1,6 +1,5 @@
 package java1.lesson2.homework;
 
-
 public class HomeWork {
 
     /* Задать целочисленный массив, состоящий из элементов 0 и 1.
@@ -61,6 +60,38 @@ public class HomeWork {
     }
 
 
+    /*Задать одномерный массив и найти в нем минимальный и максимальный элементы (без помощи интернета);*/
+
+    static void minMaxArray () {
+
+        int [] a = new int[] { 66, 5,83, 2, 105, 4, 5, 2, 4, 8, 9, 1} ;
+
+        int max = 0;
+        int min =  106;
+
+        for ( int i = 0; i<a.length; i++) {
+            if (max < a[i]) max = a[i] ;
+            else if (min > a[i]) min = a[i];
+
+          }
+        System.out.print("max: " + max);
+        System.out.println();
+        System.out.print("min: " + min);
+    }
+
+
+    /*Написать метод, в который передается не пустой одномерный целочисленный массив,
+    метод должен вернуть true, если в массиве есть место, в котором сумма левой и правой части массива равны.
+     */
+
+    static void checkBallance () {
+
+        int [] a = new int[] {2, 2, 2, 1, 2, 2, 10, 1} ;
+
+
+
+    }
+
 
 
     public static void main(String[] args) {
@@ -81,5 +112,12 @@ public class HomeWork {
 
         System.out.println("Task 4");
         twoDimensionalArray ();
+
+        System.out.println();
+
+        System.out.println("Task 5");
+        minMaxArray () ;
+
+
     }
 }
