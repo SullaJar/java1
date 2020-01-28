@@ -22,6 +22,7 @@ public class Guess {
                 if (q == 1) checkAnswers();
                     else {
                     System.out.println("Спасибо за игру");
+                    sc.close();
                     System.exit(0);
                 }
             }
@@ -33,8 +34,6 @@ public class Guess {
             if (userAnswer > answer) {
                 System.out.println("Загаданное число меньше ");
             }
-
-
         }
 
         System.out.println("Вы проиграли");
@@ -43,6 +42,7 @@ public class Guess {
         if (q == 1) checkAnswers();
         else {
             System.out.println("Спасибо за игру");
+            sc.close();
             System.exit(0);
         }
     }
